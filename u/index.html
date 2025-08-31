@@ -102,7 +102,7 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 10px;
+            margin: 0 auto 5px;
             display: block;
             border: 3px solid white;
         }
@@ -447,11 +447,13 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: calc(100% - 5px);
-            font-weight: 500;
-            /*text-align: center;*/
-            font-weight: bold; /* 加粗样式 */
-
+            width: auto; /* 改为自动宽度 */
+            max-width: 100%; /* 最大不超过容器宽度 */
+            min-width: 0; /* 允许缩小 */
+            box-sizing: border-box; /* 包含padding和border在宽度计算内 */
+            font-weight: bold;
+            text-align: center; 
+            padding: 0 4px; /* 可选：添加左右内边距 */
         }
         
         /* 底部栏样式 */
@@ -511,7 +513,7 @@
         /* 消息小红点 */
         .message-badge {
             position: absolute;
-            top: 0px;
+            top: 5px;
             right: 10px;
             background-color: #ff553e;
             color: white;
@@ -613,7 +615,7 @@
                                 1.2k
                             </div>
                         </div>
-                        <div class="video-title">旅行Vlog：云南之旅</div>
+                        <div class="video-title">云南旅行Vlog</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img2.baidu.com/it/u=1530788640,2890431739&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=668')">
@@ -624,7 +626,7 @@
                                 2.5k
                             </div>
                         </div>
-                        <div class="video-title">探店最美的咖啡馆</div>
+                        <div class="video-title">沉浸解锁咖啡馆</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img2.baidu.com/it/u=3401144779,3259505649&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667')">
@@ -634,7 +636,7 @@
                                 1.6k
                             </div>
                         </div>
-                        <div class="video-title">十二节气：秋分时节</div>
+                        <div class="video-title">十二节气：秋分</div>
                     </div>
                     
                     <!-- 第2排 -->
@@ -647,7 +649,7 @@
                                 1.8k
                             </div>
                         </div>
-                        <div class="video-title">人生何处还能相逢</div>
+                        <div class="video-title">人生何处再相逢</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img0.baidu.com/it/u=4049470323,2155099837&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1067')">
@@ -658,7 +660,7 @@
                                 3.2k
                             </div>
                         </div>
-                        <div class="video-title">出去看一下大自然</div>
+                        <div class="video-title">出去看大自然</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img0.baidu.com/it/u=2399916561,3396552030&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667')">
@@ -669,7 +671,7 @@
                                 2.1k
                             </div>
                         </div>
-                        <div class="video-title">健身日常：居家训练</div>
+                        <div class="video-title">居家健身日常</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img1.baidu.com/it/u=3172136903,2204941038&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1424')">
@@ -680,7 +682,7 @@
                                 4.5k
                             </div>
                         </div>
-                        <div class="video-title">美妆教程：日常淡妆</div>
+                        <div class="video-title">日常美妆教程</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img1.baidu.com/it/u=1921127345,2348404483&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666')">
@@ -691,7 +693,7 @@
                                 1.7k
                             </div>
                         </div>
-                        <div class="video-title">读书分享：本月好书推荐</div>
+                        <div class="video-title">本月好书推荐</div>
                     </div>
                     <div class="video-item-container">
                         <div class="video-item" style="background-image: url('https://img2.baidu.com/it/u=751107267,3190419073&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666')">
@@ -702,7 +704,7 @@
                                 1.5k
                             </div>
                         </div>
-                        <div class="video-title">宠物日常：猫咪的可爱瞬间</div>
+                        <div class="video-title">猫咪的可爱瞬间</div>
                     </div>
                 </div>
             </div>
